@@ -153,12 +153,12 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div
   // });
 
   $(".btn-nav-menu,.btn-favorite").on("click", function(){
-    navMenuAllClose();
     if ($(this).hasClass("on")) {
       $(this).removeClass("on");
       $(this).next().slideUp("fast");
     }
     else {
+      navMenuAllClose();
       $(this).addClass("on");      
       $(this).next().slideDown("fast");
     } 
