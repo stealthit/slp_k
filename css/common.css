@@ -126,7 +126,7 @@ input[type="checkbox"]:hover {
 
 input[type="checkbox"]:checked {
   border-color: #c2c5c8;
-  color: #172d5a;
+  color: #028f69;
 }
 
 input[type="checkbox"]:checked::before {
@@ -409,7 +409,6 @@ select option {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  padding-right: 10px;
   font-size: 12px;
   font-weight: bold;
   color: #444;
@@ -580,6 +579,7 @@ select option {
 }
 
 .setting-grid .setting-grid-content .input-wrapper.text-edit input {
+  width: 100%;
   background: #fff7e4;
 }
 
@@ -737,7 +737,7 @@ select option {
 .add-pic-wrap .pic-detail .pic-name {
   font-size: 12px;
   font-weight: 500;
-  color: #172d5a;
+  color: #028f69;
 }
 
 .btn-green {
@@ -794,7 +794,7 @@ select option {
   width: 3px;
   height: 13px;
   margin: 4px 6px 5px 0;
-  background-color: #172d5a;
+  background-color: #028f69;
 }
 
 .ic-dot {
@@ -812,7 +812,7 @@ select option {
   width: 3px;
   height: 3px;
   margin: 12px 3px 11px 0;
-  background-color: #172d5a;
+  background-color: #028f69;
 }
 
 .list-title {
@@ -874,7 +874,7 @@ select option {
 .modal-con .modal-top .box-title {
   font-size: 14px;
   font-weight: bold;
-  color: #172d5a;
+  color: #028f69;
 }
 
 .modal-con .modal-body {
@@ -957,8 +957,8 @@ ul.list-tab li.list-tab-menu {
 }
 
 ul.list-tab li.list-tab-menu.on {
-  border: solid 1px #172d5a;
-  color: #172d5a;
+  border: solid 1px #028f69;
+  color: #028f69;
 }
 
 .list-tab-content {
@@ -1200,5 +1200,11 @@ ul.list-tab li.list-tab-menu.on {
   width: 8px;
   height: 8px;
   margin-left: 10px;
+}
+
+.bt-popup-close {
+  background: url(../assets/bt_popup_close.svg);
+  width: 12px;
+  height: 12px;
 }
 /*# sourceMappingURL=common.css.map */

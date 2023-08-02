@@ -109,7 +109,7 @@ input[type="checkbox"] {
 
   &:checked {
     border-color: #c2c5c8;
-    color: #172d5a;
+    color: #028f69;
 
     &::before {
       border-radius: 2px;
@@ -339,7 +339,7 @@ select {
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  padding-right: 10px;
+  // padding-right: 10px;
   font-size: 12px;
   font-weight: bold;
   color: #444;
@@ -424,6 +424,7 @@ select {
       gap: 10px;
 
       &.text-edit input{
+        width: 100%;
         background: #fff7e4;
       }
     }
@@ -527,7 +528,7 @@ select {
     .pic-name {
       font-size: 12px;
       font-weight: 500;          
-      color: #172d5a;
+      color: #028f69;
     }
   }
 }
@@ -564,7 +565,7 @@ select {
     height: 13px;  
     margin: 4px 6px 5px 0;
 
-    background-color: #172d5a;
+    background-color: #028f69;
   }
 }
 .ic-dot {
@@ -577,7 +578,7 @@ select {
     height: 3px;  
     margin: 12px 3px 11px 0;
 
-    background-color: #172d5a;
+    background-color: #028f69;
   }
 }
 .list-title {
@@ -618,7 +619,7 @@ select {
     .box-title {
       font-size: 14px;
       font-weight: bold;      
-      color: #172d5a;
+      color: #028f69;
     }
   }
   .modal-body {
@@ -668,8 +669,8 @@ ul.list-tab {
     border: solid 1px #c2c5c8;
     background-color: #fff;
     &.on {
-      border: solid 1px #172d5a;
-      color: #172d5a;    
+      border: solid 1px #028f69;
+      color: #028f69;    
     }
   }
 }
@@ -801,4 +802,9 @@ ul.list-tab {
   width: 8px;
   height: 8px;
   margin-left: 10px;
+}
+.bt-popup-close {
+  background: url(../assets/bt_popup_close.svg);
+  width: 12px;
+  height: 12px;  
 }

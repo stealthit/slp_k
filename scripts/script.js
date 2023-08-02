@@ -124,34 +124,10 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div
         spinner.find("input").trigger("change");
       });
 
-    });
+    });  
 
-  // selectBox 
-  // const btnSelect = document.querySelector('.btn-select');
-  // const listMember = document.querySelector('.list-member');
-  // btnSelect.addEventListener('click', (event) => {
-  //   btnSelect.classList.toggle('on');
-  // });
-  // listMember.addEventListener('click', (event) => {
-  //   if (event.target.nodeName === "BUTTON") {
-  //     btnSelect.innerText = event.target.innerText;
-  //     btnSelect.classList.remove('on');
-  //   }
-  // });
 
-  // nav-menu click event
-  // const btnSelect = document.querySelector('.btn-nav-menu');
-  // const listMember = document.querySelector('.menu-list');
-  // btnSelect.addEventListener('click', (event) => {
-  //   btnSelect.classList.toggle('on');
-  // });
-  // listMember.addEventListener('click', (event) => {
-  //   if (event.target.nodeName === "BUTTON") {
-  //     btnSelect.innerText = event.target.innerText;
-  //     btnSelect.classList.remove('on');
-  //   }
-  // });
-
+// location nav-menu event ------------------------------------------
   $(".btn-nav-menu,.btn-favorite").on("click", function(){
     if ($(this).hasClass("on")) {
       $(this).removeClass("on");
@@ -167,34 +143,17 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div
     $(this).parent().prev().html($(this).text() + '<img class="ic-input-down">');
     navMenuAllClose();
   })
+  $("ul.fa-list li").on("click", function(){
+    $(".btn-favorite").removeClass("on");
+    $(".fa-list").slideUp("fast");
+  })
 
+  // menulist allClose
   function navMenuAllClose() {
     $(".btn-favorite").removeClass("on");
     $(".btn-nav-menu").removeClass("on");
     $(".fa-list").slideUp("fast");
     $(".menu-list").slideUp("fast");
   }
-  // //nav-favorite
-  // $(".btn-favorite").on("click", function(){
-  //   if ($(this).hasClass("on")) {
-  //     $(this).removeClass("on");
-  //     $(".fa-list").slideUp("fast");
-  //   }
-  //   else {
-  //     $(this).addClass("on");      
-  //     $(".fa-list").slideDown("fast");
-  //   }    
-  // })
-  $("ul.fa-list li").on("click", function(){
-    $(".btn-favorite").removeClass("on");
-    $(".fa-list").slideUp("fast");
-  })
-  //sidebar menu click
-  // $("details.depth1 .menu-title").on("click",function() {
-  //   if ($(this).hasClass("active") == false){      
-  //     $(".menu-title").removeClass("active");
-  //     $(".menu-title img").removeClass("active");
-  //     $(this).addClass("active");    
-  //     $(this).children("img").addClass("active");
-  //   }    
-  // })
+// ------------------------------------------------------------------------
+
