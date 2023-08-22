@@ -199,124 +199,153 @@
       </div>
       <main id="content" class="main-content">
         <div class="content-wrapper">          
-          <div class="tab-contents Ptype04">
-            <div class="search-conditions">              
+          <!-- 개발시 퍼블된 페이지의 tab-contents 를 불러와서 사용  -->
+          <div class="tab-contents Ptype11">
+            <div class="search-conditions con-box">              
               <div class="setting-grid">
-                <div class="setting-grid-title">공유구분</div>
+                <div class="setting-grid-title">업체코드</div>
                 <div class="setting-grid-content">  
-                  <div class="input-group text-edit">
-                    <select>
-                      <option value="" selected>창고</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>                      
-                    </select>                  
-                  </div>                                  
+                  <div class="input-wrapper">                    
+                    <input type="text" value="" /> 
+                  </div>                                 
                 </div>
-                <div class="setting-grid-title">창고명</div>
+                <div class="setting-grid-title">업체명</div>
                 <div class="setting-grid-content">  
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>울산유통</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>                      
+                  <div class="input-wrapper">                    
+                    <input type="text" value="" /> 
+                  </div>                                 
                 </div>
-                <div class="setting-grid-title">창고종류</div>
-                <div class="setting-grid-content"> 
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>상온</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>     
-                  </div>  
-                </div>                 
-                <div class="setting-grid-title">지역(시도)</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>울산시</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
-                </div> 
-                <div class="setting-grid-title">지역(시군구)</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>북구</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
-                </div> 
-                <div class="setting-grid-title">공유평수</div>
-                <div class="setting-grid-content">      
-                  <div class="input-time-group">
-                    <input type="text" value="80"/>
-                    <span>~</span>
-                    <input type="text" value="150"/>
-                  </div>     
-                </div> 
-                <div class="setting-grid-title">공유기간구분</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>월</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
+                <div class="setting-grid-title">사업자등록번호</div>
+                <div class="setting-grid-content">  
+                  <div class="input-wrapper">                    
+                    <input type="text" value="" /> 
+                  </div>                                 
                 </div>
-                <div class="setting-grid-title">공유금액</div>
+                <div class="setting-grid-title">계약여부</div>
                 <div class="setting-grid-content">      
                   <div class="input-group">
                     <select>
-                      <option value="" selected>6</option>
+                      <option value="" selected>계약완료</option>
                       <option value="">옵션1</option>
                       <option value="">옵션2</option>
                       <option value="">옵션3</option>
                     </select>                  
                   </div>           
-                </div>                                  
-                <div class="setting-grid-title">공유금액</div>
-                <div class="setting-grid-content">      
-                  <div class="input-time-group">
-                    <input type="text" value="1,000"/>
-                    <span>~</span>
-                    <input type="text" value="1,200"/>
-                  </div>     
-                </div> 
+                </div>                
+                <div class="setting-grid-title">연락처</div>
+                <div class="setting-grid-content">  
+                  <div class="input-wrapper">                    
+                    <input type="text" value="" /> 
+                  </div>                                 
+                </div>                
               </div>
               <div class="search-btn-group">
                 <div class="btn-search btn-green"><img>조회</div>
                 <div class="btn-clear btn-white"><img>초기화</div>
               </div>
-            </div>
-            <div class="search-list">
-              <div class="list-top">
-                <div class="list-title ic-title-mark">공유목록정보</div>
-                <div class="list-btn-group">
-                  <button class="btn-white">소통게시판</button>
-                  <button class="btn-green">사용신청</button>                  
+            </div>            
+            <div class="list-wrapper">
+              <div class="search-list">
+                <div class="list-top">
+                  <div class="list-title ic-title-mark">업체 정보</div>                  
                 </div>
+                <!-- 개발 작업시 그리드 들어갈 부분 -->
+                <div class="list-grid-wrapper con-box">
+                  그리드 영역
+                </div>
+                <!---------------------------------->
+                
               </div>
-              <!-- 개발 작업시 그리드 들어갈 부분 -->
-              <div class="list-grid-wrapper con-box">
-                그리드영역                
-                <button class="btn-green btn-popup-test">사진 팝업 테스트</button>
-                <!-- 그리드 영역 -->
+              <div class="search-edit">    
+                <div class="list-top">
+                  <div class="list-title ic-title-mark">계약 정보</div>      
+                  <div class="edit-btn-wrapper">                                      
+                    <button class="btn-white">신규계약등록</button>
+                    <button class="btn-green"><img class="ic-bt-save">저장</button>                    
+                  </div>            
+                </div>   
+                <div class="con-box">
+                  <!-- 개발 작업시 그리드 들어갈 부분 -->
+                  <div class="list-grid-wrapper">
+                    그리드 영역
+                  </div>
+                  <!---------------------------------->
+                  <!-- 개발시 입력창 사이 간격은 gap-10,gap-15,gap-20 변경으로 조정  2023.7.18-->             
+                  <div class="setting-grid gap-10"> 
+                    <div class="setting-grid-title">어카운트 ID</div>
+                    <div class="setting-grid-content">  
+                      <div class="input-wrapper">                    
+                        <input type="text" value="" placeholder="관리자 아이디로 사용"/> 
+                        <div class="edit-btn-wrapper"><button class="btn-white">중복확인</button></div>              
+                      </div>                
+                    </div> 
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title">시스템 사용료</div>
+                    <div class="setting-grid-content">  
+                      <div class="input-check-group">
+                        <div class="check-box">
+                          <input type="checkbox" name="" id="" checked>물류운영(납품, 창고, 운송)
+                        </div>
+                        <div class="check-box">
+                          <input type="checkbox" name="" id="">물류관제
+                        </div>
+                        <div class="check-box">
+                          <input type="checkbox" name="" id="">물류공유
+                        </div>
+                      </div>                   
+                    </div>
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title"></div>
+                    <div class="setting-grid-content">  
+                      <div class="input-wrapper w-140">                    
+                        <input type="text" value="500,000"/>
+                        <span>원/월</span>                         
+                      </div>                
+                    </div>
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title">클라우드 사용료</div>
+                    <div class="setting-grid-content">  
+                      <div class="radio-group">
+                        <input type="radio" id="rd1" name="rd" value="1" checked><label for="rd1">기본형(10만/월)</label>
+                        <input type="radio" id="rd2" name="rd" value="2" ><label for="rd2">고급형(20만/월)</label>                        
+                      </div>                 
+                    </div>
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title">계약기간</div>
+                    <div class="setting-grid-content">  
+                      <div class="input-date-group">
+                        <input type="date" value="2022-01-01"/>
+                        <span>~</span>
+                        <input type="date" value="2022-06-01"/>
+                      </div>               
+                    </div>
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title">담당자 이름</div>
+                    <div class="setting-grid-content">     
+                      <div class="input-wrapper">                    
+                        <input type="text" value="홍길동"/> 
+                      </div>                    
+                    </div>
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title">담당자 연락처</div>
+                    <div class="setting-grid-content">     
+                      <div class="input-wrapper">                    
+                        <input type="text" value="010-2323-0423"/> 
+                      </div>                       
+                    </div>
+                    <div class="grid-blank"></div>                 
+                    <div class="setting-grid-title">담당자 이메일</div>
+                    <div class="setting-grid-content">     
+                      <div class="input-wrapper">                    
+                        <input type="text" value="aaa@naver.com"/> 
+                      </div>                       
+                    </div>
+                    <div class="grid-blank"></div>                                     
+                  </div>
+                </div>                
               </div>
-              <!---------------------------------->
             </div>
-          </div>            
+          </div>    
         </div>
         <div class="tab-container">            
           <ul class="tab">
@@ -344,32 +373,8 @@
     </div>
   </div>
 
-  <div id="modal-background"></div>
-	<div class="popup-pic modal-con">
-    <div class="modal-top">
-      <div class="box-title">창고 사진 조회</div>
-      <button type="button" onclick="closePopup()" class="close bt-popup-close"></button>
-    </div>  
-    <div class="modal-body">
-      <img src="../assets/pic_sample.png" alt="" class="img-pic">
-    </div>
-		<div class="modal-bottom">
-      <button type="button" onclick="closePopup()" class="close btn-white">닫기</button>
-    </div>
-	</div>
-
-
   <script src="../scripts/jquery-3.6.0.min.js"></script>
   <script src="../scripts/jquery-ui.min.js"></script>
   <script src="../scripts/script.js"></script>
-
-  <script>
-    $(".btn-popup-test").on('click',function(){
-      $("#modal-background").fadeIn(300);
-      $(".modal-con").css("display", "flex").hide().fadeIn();
-      $("body").css("overflow", "hidden");
-    });
-  
-  </script>
 </body>
 </html>

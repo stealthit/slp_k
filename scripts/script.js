@@ -157,3 +157,11 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div
   }
 // ------------------------------------------------------------------------
 
+// background
+$("#modal-background, .close").on('click',function(){      
+  if ($(this).hasClass("close")){
+    $("#modal-background").fadeOut(300);
+    $(".modal-con").fadeOut(300);  
+    $('body').css('overflow', 'overlay');
+  }
+});

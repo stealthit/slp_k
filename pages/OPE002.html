@@ -199,124 +199,62 @@
       </div>
       <main id="content" class="main-content">
         <div class="content-wrapper">          
-          <div class="tab-contents Ptype04">
-            <div class="search-conditions">              
-              <div class="setting-grid">
-                <div class="setting-grid-title">공유구분</div>
-                <div class="setting-grid-content">  
-                  <div class="input-group text-edit">
-                    <select>
-                      <option value="" selected>창고</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>                      
-                    </select>                  
-                  </div>                                  
-                </div>
-                <div class="setting-grid-title">창고명</div>
-                <div class="setting-grid-content">  
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>울산유통</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>                      
-                </div>
-                <div class="setting-grid-title">창고종류</div>
-                <div class="setting-grid-content"> 
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>상온</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>     
+          <div class="tab-contents Ptype06">
+            <div class="search-conditions con-box">              
+              <div class="setting-grid">                
+                <div class="setting-grid-title">권한명</div>
+                <div class="setting-grid-content">   
+                  <div class="input-wrapper">                    
+                    <input type="text" value="" /> 
                   </div>  
-                </div>                 
-                <div class="setting-grid-title">지역(시도)</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>울산시</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
-                </div> 
-                <div class="setting-grid-title">지역(시군구)</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>북구</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
-                </div> 
-                <div class="setting-grid-title">공유평수</div>
-                <div class="setting-grid-content">      
-                  <div class="input-time-group">
-                    <input type="text" value="80"/>
-                    <span>~</span>
-                    <input type="text" value="150"/>
-                  </div>     
-                </div> 
-                <div class="setting-grid-title">공유기간구분</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>월</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
-                </div>
-                <div class="setting-grid-title">공유금액</div>
-                <div class="setting-grid-content">      
-                  <div class="input-group">
-                    <select>
-                      <option value="" selected>6</option>
-                      <option value="">옵션1</option>
-                      <option value="">옵션2</option>
-                      <option value="">옵션3</option>
-                    </select>                  
-                  </div>           
-                </div>                                  
-                <div class="setting-grid-title">공유금액</div>
-                <div class="setting-grid-content">      
-                  <div class="input-time-group">
-                    <input type="text" value="1,000"/>
-                    <span>~</span>
-                    <input type="text" value="1,200"/>
-                  </div>     
-                </div> 
+                </div>                         
               </div>
               <div class="search-btn-group">
                 <div class="btn-search btn-green"><img>조회</div>
                 <div class="btn-clear btn-white"><img>초기화</div>
               </div>
-            </div>
-            <div class="search-list">
-              <div class="list-top">
-                <div class="list-title ic-title-mark">공유목록정보</div>
-                <div class="list-btn-group">
-                  <button class="btn-white">소통게시판</button>
-                  <button class="btn-green">사용신청</button>                  
+            </div>            
+            <div class="list-wrapper">
+              <div class="search-list">
+                <div class="list-top">
+                  <div class="list-title ic-title-mark">권한 정보</div>    
+                  <div class="edit-btn-wrapper">                    
+                    <button class="btn-white"><img class="ic-line-plus">행 추가</button>
+                    <button class="btn-white"><img class="ic-line-minus">행 삭제</button>                    
+                    <button class="btn-green"><img class="ic-bt-save">저장</button>
+                  </div>                
                 </div>
+                <!-- 개발 작업시 그리드 들어갈 부분 -->
+                <div class="list-grid-wrapper con-box">                  
+                  그리드 영역
+                </div>
+                <!---------------------------------->
               </div>
-              <!-- 개발 작업시 그리드 들어갈 부분 -->
-              <div class="list-grid-wrapper con-box">
-                그리드영역                
-                <button class="btn-green btn-popup-test">사진 팝업 테스트</button>
-                <!-- 그리드 영역 -->
+              <div class="search-list">   
+                <div class="list-top">
+                  <div class="list-title ic-title-mark">권한별 메뉴 정보</div>
+                  <div class="edit-btn-wrapper">
+                    <div class="ic-dot">시스템</div>
+                    <div class="input-group  w-120">
+                      <select>           
+                        <option value="">전체</option>                 
+                        <option value="">옵션1</option>
+                        <option value="">옵션2</option>
+                        <option value="">옵션3</option>
+                      </select>                  
+                    </div>                     
+                    <button class="btn-white">조회</button>                  
+                    <button class="btn-green"><img class="ic-bt-save">저장</button>
+                  </div>                 
+                </div>
+                <!-- 개발 작업시 그리드 들어갈 부분 -->
+                <div class="list-grid-wrapper con-box">
+                  그리드 영역
+                </div>
+                <!---------------------------------->
               </div>
-              <!---------------------------------->
             </div>
-          </div>            
+          </div>  
         </div>
         <div class="tab-container">            
           <ul class="tab">
@@ -345,31 +283,68 @@
   </div>
 
   <div id="modal-background"></div>
-	<div class="popup-pic modal-con">
+
+	<div class="popup-mtype01 modal-con">
     <div class="modal-top">
-      <div class="box-title">창고 사진 조회</div>
+      <div class="box-title">권한등록</div>
       <button type="button" onclick="closePopup()" class="close bt-popup-close"></button>
     </div>  
-    <div class="modal-body">
-      <img src="../assets/pic_sample.png" alt="" class="img-pic">
+    <div class="modal-body">        
+      <div class="search-list">    
+        <div class="list-top">
+          <div class="list-title ic-title-mark">상세메뉴명 <span>창고기본정보등록</span></div>
+          <div class="edit-btn-wrapper">            
+            <button class="btn-green btn-imsi"><img class="ic-bt-save">저장</button>
+          </div>                 
+        </div>    
+        <!-- 개발 작업시 그리드 들어갈 부분 -->
+        <div class="list-grid-wrapper con-box">
+          그리드영역                          
+          <!-- 그리드 영역 -->
+        </div>
+        <!---------------------------------->
+      </div>
+      <div class="search-list sel-comment on">
+        <div class="sel-arrow"><img class="ic-info-select"></div>
+        사용자그룹을 선택해주세요
+      </div>
+      <!-- 그리드A의 사용자선택시 sel-comment의 on 클래스는 삭제, userG-list에 on 클래스 추가 -->
+      <!-- 임시로 A그리드의 저장버튼(btn-imsi)에 on 기능 부여함 -->
+      <div class="search-list userG-list">    
+        <div class="list-top">
+          <div class="list-title ic-title-mark">사용자그룹명 <span>사용자그룹A</span></div>
+          <div class="edit-btn-wrapper">            
+            <button class="btn-green"><img class="ic-bt-save">저장</button>
+          </div>                 
+        </div>    
+        <!-- 개발 작업시 그리드 들어갈 부분 -->
+        <div class="list-grid-wrapper con-box">
+          그리드영역                          
+          <!-- 그리드 영역 -->
+        </div>
+        <!---------------------------------->
+      </div>
     </div>
 		<div class="modal-bottom">
-      <button type="button" onclick="closePopup()" class="close btn-white">닫기</button>
+      <button type="button" onclick="closePopup()" class="close btn-green">확인</button>      
     </div>
 	</div>
-
 
   <script src="../scripts/jquery-3.6.0.min.js"></script>
   <script src="../scripts/jquery-ui.min.js"></script>
   <script src="../scripts/script.js"></script>
 
   <script>
-    $(".btn-popup-test").on('click',function(){
+    $(".btn-popup-mtype01").on('click',function(){
       $("#modal-background").fadeIn(300);
-      $(".modal-con").css("display", "flex").hide().fadeIn();
+      $(".popup-mtype01").css("display", "flex").hide().fadeIn();
       $("body").css("overflow", "hidden");
     });
-  
+
+    $(".btn-imsi").on("click",function(){
+      $(".sel-comment").removeClass("on");
+      $(".userG-list").addClass("on");
+    })
   </script>
 </body>
 </html>
