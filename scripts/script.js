@@ -82,11 +82,11 @@ $(".btn-sidebar").on("click", function(){
 $(".btn-search-detail").on("click", function(){
   if ($(this).hasClass("open")) {
     $(this).removeClass("open");
-    $(".search-conditions").animate({height: '82px'});
+    $(".search-conditions").animate({height: '84px'});
   }
   else {
     $(this).addClass("open");
-    var elHeight = document.querySelector(".setting-grid").scrollHeight + 20;
+    var elHeight = document.querySelector(".setting-grid").scrollHeight + 22;
     $(".search-conditions").animate({height: elHeight});
   }
 })
