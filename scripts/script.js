@@ -18,6 +18,13 @@ $(".btn-sidebar").on("click", function(){
     $("details.depth1 summary .menu-title,ul.sidebar-bottom li").animate({gap:'12px'});
   }
 })
+
+$(".sidebar-main-menu details.depth1 summary").on("click",function(){
+  if ($(".btn-sidebar").hasClass("show")) {}
+  else {
+    event.preventDefault();    
+  }
+})
 //--------------------------------------------
 //start tab-------------------------------------------------
   const li = $(".tab .tab-menu");

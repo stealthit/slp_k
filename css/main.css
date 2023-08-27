@@ -1879,6 +1879,7 @@ ul.list-tab li.list-tab-menu.on {
 }
 
 .wrapper .main-wrapper .header .location .nav-home {
+  cursor: pointer;
   width: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2795,7 +2796,7 @@ ul.list-tab li.list-tab-menu.on {
 .Ptype09 .alarm-action .alarm-box .box-row .box-content button {
   font-size: 11px;
   font-weight: bold;
-  color: #5c7099;
+  color: #888;
   width: 40px;
   height: 24px;
 }
@@ -2834,7 +2835,7 @@ ul.list-tab li.list-tab-menu.on {
 .Ptype09 .alarm-action .alarm-box .box-row .box-content.multi-line .alarm-title {
   font-size: 12px;
   font-weight: bold;
-  color: #5c7099;
+  color: #888;
 }
 
 .Ptype09 .alarm-action .alarm-box .box-row .box-content.multi-line .alarm-row {

@@ -1266,6 +1266,7 @@ ul.list-tab {
         display: flex;
 
         .nav-home {
+          cursor: pointer;
           width: 36px;
           @include flex_center;
           border-right: 1px solid #e8e8e8;
@@ -1843,7 +1844,7 @@ ul.list-tab {
           button {
             font-size: 11px;
             font-weight: bold;
-            color: #5c7099;
+            color: #888;
             width: 40px;
             height: 24px;  
           }
@@ -1865,7 +1866,7 @@ ul.list-tab {
             .alarm-title {
               font-size: 12px;
               font-weight: bold;
-              color: #5c7099;
+              color: #888;
             }
             .alarm-row {
               display: flex;
