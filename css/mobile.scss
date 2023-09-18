@@ -159,7 +159,7 @@ body {
 }
 
 // function
-$main_cl : #028f69;
+$main_cl : #5372d9;
 $main2_cl : #111111;
 $main3_cl : #34a889;
 $main_light1_cl : #444444;
@@ -172,7 +172,7 @@ $btn_bd_cl : #cccccc;
 $con_box_bd_cl : #e8e8e8;
 $input_bd_cl : #c2c5c8;
 $box_bd_cl : #d7d7d7;
-$circle_bd_cl : #e1eeea;
+$circle_bd_cl : #d2dbf9;
 
 @mixin flex_center() {
   display: flex;
@@ -194,12 +194,12 @@ $circle_bd_cl : #e1eeea;
 
 @mixin menu_images($name) {  
   .#{$name}{
-    content: url(../assets/mobile/#{$name}_n@3x.png);
+    content: url(../assets/#{$name}_n@3x.png);
     width: 18px;
     height: 18px;
     
     &.active {
-      content: url(../assets/mobile/#{$name}_s@3x.png);
+      content: url(../assets/#{$name}_s@3x.png);
     }
   }  
 }
@@ -211,11 +211,11 @@ input[type=text],input[type=password],input[type=date],input[type=month],input[t
   width: 100%;
   height: 100%;
   padding: 4px 8px 3px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px $input_bd_cl;
   background-color: white;
   &:disabled {
-    border-radius: 2px;
+    border-radius: 6px;
     border: solid 1px #e2e5e9;
     background-color: #f8f7f7;
     color: $input_bd_cl;
@@ -226,7 +226,7 @@ input[type=date],input[type=month],input[type=time] {
   position: relative;
   // height: 100%;
   padding-left: 10px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
   font-size: 14px;  
@@ -276,7 +276,7 @@ select, select.select-box {
 
   background: url(../assets/mobile/ic_input_down.png) no-repeat center right 12px;
   background-size: 10px;
-  border-radius: 2px;  
+  border-radius: 6px;  
   background-color: #fff;
   padding: 3px 8px 2px;  
 
@@ -306,8 +306,8 @@ input[type=date]:after,input[type=month]:after {
 textarea {
   width: 100%;
   height: 100%;
-  border-radius: 2px;
-  border: solid 1px #c2c5c8;
+  border-radius: 6px;
+  // border: solid 1px #c2c5c8;
   background-color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -316,7 +316,7 @@ textarea {
 .select-group {
   flex: 1;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
 }
@@ -330,20 +330,20 @@ textarea {
 }
 .con-box {  
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   // box-shadow: 0 3px 15px 0 $shadow_cl;
   border: solid 1px $con_box_bd_cl;
   background-color: white;
 }
 .btn-white {
-  border-radius: 2px;
+  border-radius: 18px;
   border: solid 1px $btn_bd_cl;
   background-color: #fff;
   color: $main_light1_cl;
 }
 .btn-main {
   position: relative;  
-  border-radius: 2px;
+  border-radius: 18px;
   border: solid 1px $main_cl;
   background-color: $main_cl;
   color: white;
@@ -545,7 +545,7 @@ details[open] summary {
 
 body {
   position: relative;
-  background: white;
+  background: #f2f3f4;
   &:has(.bg-black) {background: black;}
 }
 main {
@@ -611,7 +611,7 @@ main {
       .btn-login {
         width: 320px;
         height: 48px;        
-        border-radius: 2px;
+        border-radius: 24px;
         background-color: $main_cl;
         font-size: 15px;
         font-weight: bold;  
@@ -663,8 +663,9 @@ main {
       color: $main_light1_cl;
       font-size: 14px;
       font-weight: bold;
-      border-radius: 4px;
-      background-color: #eff3f2;
+      border-radius: 10px;
+      border: solid 1px #e8e8e8;
+      background-color: #fff;
       padding: 10px;
       .row {
         display: flex;
@@ -732,7 +733,7 @@ main {
       }
     }
     .no-data {
-      background: white;
+      // background: white;
       flex: 1;
       @include flex_center();
       flex-direction: column;  
@@ -925,7 +926,7 @@ main {
     color: white;
     ul.menu-depth1 {
       width: 80px;
-      background: #027f5d;
+      background: #3c5abf;
       font-size: 14px;
       font-weight: 500;
       li {
@@ -965,12 +966,12 @@ main {
         }
         &.active summary {
           border-radius: 4px;          
-          background-color: #34a889;
+          background-color: #3c5abf;
         }
         .details-submenu {
           margin-left: 10px;
           padding: 15px;
-          border-left: 1px solid #50ab91;
+          border-left: 1px solid #879ce4;
           // background: $tb_bg_cl;
           display: flex;
           flex-direction: column;
@@ -978,7 +979,7 @@ main {
           font-size: 14px;
           font-weight: 500;
           line-height: 1.43;
-          color: #dcfff5;
+          color: #bbc8ef;
 
           li {
             height: 22px;

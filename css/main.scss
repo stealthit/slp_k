@@ -159,7 +159,7 @@ body {
 }
 
 // scss function
-$main_color : #028f69;
+$main_color : #5372d9;
 
 $min-width : 1500px;
 
@@ -215,7 +215,7 @@ $min-width : 1500px;
   &::-webkit-scrollbar-thumb {
     @if $direction == 'H' { height: 6px; } @else { width: 6px; }
     border-radius: 6px;
-    background: #236a58;
+    background: #4362c9;
   }
 }
 
@@ -225,7 +225,7 @@ $min-width : 1500px;
 }
 
 body {
-  background-color: white;  
+  background-color: #f2f3f4;  
   overflow: overlay;
 }
 :root {
@@ -234,16 +234,16 @@ body {
   cursor: default;
   overflow-wrap: break-word;
 }
-textarea {padding: 4px 8px;width: 100%;height: 100%;}
+textarea {padding: 4px 8px;width: 100%;height: 100%;border-radius: 6px;}
 input[type=text],input[type=password],input[type=date],input[type=month],input[type=time] {
   width: 120px;
   height: 26px;
   padding: 4px 8px 3px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
   &:disabled {
-    border-radius: 2px;
+    border-radius: 6px;
     border: solid 1px #e2e5e9;
     background-color: #f8f7f7;
     color: #c2c5c8;
@@ -253,7 +253,7 @@ input[type=date],input[type=month],input[type=time] {
   position: relative;
   // height: 100%;
   padding-left: 10px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
   font-size: 12px;  
@@ -307,7 +307,7 @@ input[type="checkbox"] {
   cursor: pointer;
   outline: none !important;
   border: 1px solid #e2e5e9;
-  border-radius: 2px;
+  border-radius: 4px;
   background: #fff;
 
   &::before {
@@ -329,10 +329,10 @@ input[type="checkbox"] {
 
   &:checked {
     border-color: #c2c5c8;
-    color: #028f69;
+    color: #5372d9;
 
     &::before {
-      border-radius: 2px;
+      border-radius: 4px;
       transform: scale(1) translate(-50%, -43%);
     }
   }
@@ -354,7 +354,7 @@ select {
   text-overflow: ellipsis;
 
   background: url(../assets/ic_input_down.png) no-repeat center right 8px;
-  border-radius: 2px;  
+  border-radius: 6px;  
   background-color: #fff;
   padding: 3px 8px 2px;  
 
@@ -430,6 +430,7 @@ select {
     margin: 0;
     padding-left: 20px;
     border: 1px solid #eee;
+    border-radius: 6px;
   }
 } 
 
@@ -475,7 +476,7 @@ select {
   max-width: 260px;
   min-width: 120px;
   height: 26px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
 }
@@ -551,7 +552,7 @@ select {
 }
 .con-box {
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
@@ -585,14 +586,13 @@ select {
 .w-120 {width: 120px;}
 .w-160 {width: 160px !important;}
 .search-btn-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
-  width: 80px;              
+  display: flex;  
+  justify-content: center;
+  gap: 6px;  
   line-height: 1.58;                
   .btn-search {
     height: 26px;  
+    border-radius: 13px;
     img {
       content: url(../assets/ic_bt_search@3x.png);
       width: 11px;
@@ -602,6 +602,7 @@ select {
   }
   .btn-clear {                
     height: 26px;   
+    border-radius: 13px;
     img {
       content: url(../assets/ic_bt_reset@3x.png);
       width: 11px;
@@ -697,7 +698,7 @@ select {
     .etc-text-box {
       width: 259px;
       height: 82px;      
-      border-radius: 2px;
+      border-radius: 6px;
       border: solid 1px #c2c5c8;
       background-color: #fff;
       font-size: 12px;
@@ -752,24 +753,26 @@ select {
     .pic-name {
       font-size: 12px;
       font-weight: 500;          
-      color: #028f69;
+      color: #5372d9;
     }
   }
 }
 .btn-green {
   cursor: pointer;
   @include flex_center;
-  border-radius: 2px;
-  border: solid 1px #028f69;
-  background-color: #028f69; 
+  border-radius: 13px;
+  border: solid 1px #5372d9;
+  background-color: #5372d9; 
   color: #fff; 
+  padding: 4px 19px 3px 10px;
 }
 .btn-white {
   cursor: pointer;
   @include flex_center;
-  border-radius: 2px;
+  border-radius: 13px;
   border: solid 1px #ccc;
   background-color: #fff;
+  padding: 4px 19px 3px 10px;
   color: #444;
 }
 .ic-title-nece {
@@ -791,7 +794,7 @@ select {
     height: 13px;  
     margin: 4px 6px 5px 0;
 
-    background-color: #028f69;
+    background-color: #5372d9;
   }
 }
 .ic-dot {
@@ -804,7 +807,7 @@ select {
     height: 3px;  
     margin: 12px 3px 11px 0;
 
-    background-color: #028f69;
+    background-color: #5372d9;
   }
 }
 .list-title {
@@ -845,7 +848,7 @@ select {
     .box-title {
       font-size: 14px;
       font-weight: bold;      
-      color: #028f69;
+      color: #5372d9;
     }
   }
   .modal-body {
@@ -883,7 +886,7 @@ select {
     button {
       @include flex_center;
       padding: 3px 10px 2px;
-      border-radius: 2px;
+      border-radius: 13px;
       border: solid 1px #9aa6b8;      
       font-size: 12px;
       font-weight: bold;        
@@ -911,8 +914,8 @@ ul.list-tab {
     border: solid 1px #c2c5c8;
     background-color: #fff;
     &.on {
-      border: solid 1px #028f69;
-      color: #028f69;    
+      border: solid 1px #5372d9;
+      color: #5372d9;    
     }
   }
 }
@@ -1073,7 +1076,7 @@ ul.list-tab {
     height: 20px; 
     top: 17px;    
     border-radius: 50%;       
-    background-color: #4abe88;    
+    background-color: #89a0ee;    
     // left: 0;
     left: 230px;
     @include flex_center;
@@ -1104,7 +1107,7 @@ ul.list-tab {
       align-items: center;
       height: 54px;
       padding: 0 17px;      
-      background-color: #027f5d;
+      background-color: #5372d9;
       font-size: 15px;      
       line-height: 1.13;      
       color: #fff;    
@@ -1119,7 +1122,7 @@ ul.list-tab {
       height: calc(100% - 53px);
       overflow-y: scroll;
       overflow-x: hidden;
-      background-color: #028f69;
+      background-color: #5372d9;
 
        & > .sidebar-main-menu > details > summary {
         cursor: pointer;
@@ -1160,7 +1163,7 @@ ul.list-tab {
         justify-content: space-between;                  
         height: 40px;          
         font-weight: bold;          
-        color: #dcfff5;               
+        color: #fff;               
       }     
 
       details.depth1 {   
@@ -1197,12 +1200,12 @@ ul.list-tab {
           width: 180px;
           height: 40px;          
           border-radius: 4px;
-          background-color: #34a889;
+          background-color: #3c5abf;
         }
         ul.details-submenu {
           cursor: pointer;
           margin-left: 66px;
-          border-left: 1px solid #93b6ac;
+          border-left: 1px solid #879ce4;
           li {
             display: flex;
             padding-left: 10px;
@@ -1210,7 +1213,7 @@ ul.list-tab {
             height: 30px;
             font-size: 12px;
             font-weight: 500;
-            color: #dcfff5;
+            color: #bbc8ef;
             &.active {
               font-weight: bold;color: #fff;
               border-left: 2px solid #fff;
@@ -1254,7 +1257,7 @@ ul.list-tab {
       margin: 10px 10px 0 10px;
       display: flex;
       justify-content: space-between;
-      border-radius: 4px;
+      border-radius: 10px;
       border: solid 1px #e8e8e8;
       background-color: #fff;
       font-size: 11px;
@@ -1342,7 +1345,7 @@ ul.list-tab {
       .content-wrapper {
         flex: 1;
         padding: 10px;
-        background: #fff;
+        // background: #fff;
         height: 100%;
                 
         .tab-contents {
@@ -1352,11 +1355,13 @@ ul.list-tab {
           gap: 10px;          
           .search-conditions {
             padding: 10px;
-            background: #eff3f2;
-            border-radius: 4px;
+            border-radius: 10px;
+            border: solid 1px #ddd;
+            background-color: #fefefe;
             position: relative;            
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            gap: 10px;
             font-size: 12px;
             font-weight: bold;            
             color: #5c7099;
@@ -1422,7 +1427,8 @@ ul.list-tab {
                 line-height: 1.58;                
                 .btn-delete {
                   width: 58px;
-                  height: 24px;                  
+                  height: 24px;      
+                  padding: 0;           
                   img {
                     content: url(../assets/ic_bt_delete@3x.png);
                     width: 11px;
@@ -1433,6 +1439,7 @@ ul.list-tab {
                 .btn-save {
                   width: 58px;
                   height: 24px;
+                  padding: 0;
                   img {
                     content: url(../assets/ic_bt_save@3x.png);
                     width: 11px;
@@ -1516,9 +1523,9 @@ ul.list-tab {
           color: #888;
           &.on {     
             font-weight: bold;       
-            color: #028f69;
-            background: #eff3f2;
-            border-bottom: 2px solid #028f69;
+            color: #5372d9;
+            // background: #eff3f2;
+            border-bottom: 2px solid #5372d9;
           }
           
         }
@@ -1535,7 +1542,7 @@ ul.list-tab {
     flex: 1;
     display: flex;    
     gap: 10px;
-    background: #fff;
+    // background: #fff;
 
     .search-list {   
       width: calc((100% - 130px) / 3);      
@@ -1574,7 +1581,7 @@ ul.list-tab {
     flex: 1;
     display: flex;    
     gap: 10px;
-    background: #fff;
+    // background: #fff;
 
     .search-list {   
       width: calc((100% - 130px) / 3);      
@@ -1611,7 +1618,7 @@ ul.list-tab {
   .btn-end {
     height: 24px;
     padding: 3px 10px 2px;
-    border-radius: 2px;    
+    border-radius: 13px;    
     font-size: 12px;
     font-weight: bold;    
   }
@@ -1735,7 +1742,7 @@ ul.list-tab {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    color: #028f69;    
+    color: #5372d9;    
     .info-box {
       width: 400px;
       .box-title {
@@ -1847,6 +1854,8 @@ ul.list-tab {
             color: #888;
             width: 40px;
             height: 24px;  
+            padding: 0;
+            @include flex_center();
           }
 
           &.multi-line {
@@ -1877,7 +1886,7 @@ ul.list-tab {
               .text-box {
                 flex: 1;
                 height: 100%;
-                border-radius: 2px;
+                border-radius: 6px;
                 border: solid 1px #c2c5c8;
                 background-color: #fff;
               }
@@ -1893,7 +1902,7 @@ ul.list-tab {
           font-size: 12px;
           font-weight: bold;  
           color: #444444;
-          background-color: #eff3f2;
+          background-color: #f0f2f7;
           border-right: 1px solid #e8e8e8;
         }
       }
@@ -2041,7 +2050,7 @@ ul.list-tab {
         gap: 4px;
         font-size: 22px;        
         text-align: center;
-        color: #028f69;
+        color: #5372d9;
 
         span {
           font-size: 12px;  
@@ -2074,8 +2083,8 @@ ul.list-tab {
       .btn-login {
         width: 240px;
         height: 35px;                
-        border-radius: 2px;
-        background-color: #028f69;
+        border-radius: 13px;
+        background-color: #5372d9;
         font-size: 12px;
         font-weight: bold;        
         line-height: 1.58;        

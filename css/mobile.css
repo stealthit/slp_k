@@ -338,13 +338,13 @@ input[type=text], input[type=password], input[type=date], input[type=month], inp
   width: 100%;
   height: 100%;
   padding: 4px 8px 3px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: white;
 }
 
 input[type=text]:disabled, input[type=password]:disabled, input[type=date]:disabled, input[type=month]:disabled, input[type=time]:disabled {
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #e2e5e9;
   background-color: #f8f7f7;
   color: #c2c5c8;
@@ -353,7 +353,7 @@ input[type=text]:disabled, input[type=password]:disabled, input[type=date]:disab
 input[type=date], input[type=month], input[type=time] {
   position: relative;
   padding-left: 10px;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
   font-size: 14px;
@@ -405,7 +405,7 @@ select, select.select-box {
   text-overflow: ellipsis;
   background: url(../assets/mobile/ic_input_down.png) no-repeat center right 12px;
   background-size: 10px;
-  border-radius: 2px;
+  border-radius: 6px;
   background-color: #fff;
   padding: 3px 8px 2px;
 }
@@ -435,8 +435,7 @@ input[type=date]:after, input[type=month]:after {
 textarea {
   width: 100%;
   height: 100%;
-  border-radius: 2px;
-  border: solid 1px #c2c5c8;
+  border-radius: 6px;
   background-color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -448,7 +447,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 6px;
   border: solid 1px #c2c5c8;
   background-color: #fff;
 }
@@ -468,13 +467,13 @@ textarea {
 
 .con-box {
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: solid 1px #e8e8e8;
   background-color: white;
 }
 
 .btn-white {
-  border-radius: 2px;
+  border-radius: 18px;
   border: solid 1px #cccccc;
   background-color: #fff;
   color: #444444;
@@ -482,9 +481,9 @@ textarea {
 
 .btn-main {
   position: relative;
-  border-radius: 2px;
-  border: solid 1px #028f69;
-  background-color: #028f69;
+  border-radius: 18px;
+  border: solid 1px #5372d9;
+  background-color: #5372d9;
   color: white;
 }
 
@@ -619,73 +618,73 @@ details[open] summary .ic-submenu-open {
 }
 
 .ic_left_01 {
-  content: url(../assets/mobile/ic_left_01_n@3x.png);
+  content: url(../assets/ic_left_01_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_01.active {
-  content: url(../assets/mobile/ic_left_01_s@3x.png);
+  content: url(../assets/ic_left_01_s@3x.png);
 }
 
 .ic_left_02 {
-  content: url(../assets/mobile/ic_left_02_n@3x.png);
+  content: url(../assets/ic_left_02_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_02.active {
-  content: url(../assets/mobile/ic_left_02_s@3x.png);
+  content: url(../assets/ic_left_02_s@3x.png);
 }
 
 .ic_left_03 {
-  content: url(../assets/mobile/ic_left_03_n@3x.png);
+  content: url(../assets/ic_left_03_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_03.active {
-  content: url(../assets/mobile/ic_left_03_s@3x.png);
+  content: url(../assets/ic_left_03_s@3x.png);
 }
 
 .ic_left_04 {
-  content: url(../assets/mobile/ic_left_04_n@3x.png);
+  content: url(../assets/ic_left_04_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_04.active {
-  content: url(../assets/mobile/ic_left_04_s@3x.png);
+  content: url(../assets/ic_left_04_s@3x.png);
 }
 
 .ic_left_05 {
-  content: url(../assets/mobile/ic_left_05_n@3x.png);
+  content: url(../assets/ic_left_05_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_05.active {
-  content: url(../assets/mobile/ic_left_05_s@3x.png);
+  content: url(../assets/ic_left_05_s@3x.png);
 }
 
 .ic_left_06 {
-  content: url(../assets/mobile/ic_left_06_n@3x.png);
+  content: url(../assets/ic_left_06_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_06.active {
-  content: url(../assets/mobile/ic_left_06_s@3x.png);
+  content: url(../assets/ic_left_06_s@3x.png);
 }
 
 .ic_left_07 {
-  content: url(../assets/mobile/ic_left_07_n@3x.png);
+  content: url(../assets/ic_left_07_n@3x.png);
   width: 18px;
   height: 18px;
 }
 
 .ic_left_07.active {
-  content: url(../assets/mobile/ic_left_07_s@3x.png);
+  content: url(../assets/ic_left_07_s@3x.png);
 }
 
 .btn-prev {
@@ -739,7 +738,7 @@ details[open] summary .ic-submenu-open {
   width: 3px;
   height: 15px;
   margin: 5px 6px 5px 0;
-  background-color: #028f69;
+  background-color: #5372d9;
 }
 
 .mobile-wrap {
@@ -763,7 +762,7 @@ details[open] summary .ic-submenu-open {
   width: 100%;
   height: 54px;
   padding: 15px 14px;
-  background-color: #028f69;
+  background-color: #5372d9;
 }
 
 .mobile-wrap header.mobile-head .title {
@@ -775,7 +774,7 @@ details[open] summary .ic-submenu-open {
 
 body {
   position: relative;
-  background: white;
+  background: #f2f3f4;
 }
 
 body:has(.bg-black) {
@@ -885,8 +884,8 @@ main .login-wrap .input-login-wrapper .ic-pw {
 main .login-wrap .input-login-wrapper .btn-login {
   width: 320px;
   height: 48px;
-  border-radius: 2px;
-  background-color: #028f69;
+  border-radius: 24px;
+  background-color: #5372d9;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
@@ -948,8 +947,9 @@ main.mobile-content .search-condition {
   color: #444444;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 4px;
-  background-color: #eff3f2;
+  border-radius: 10px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -1071,7 +1071,6 @@ main.mobile-content .cars-box .cars-num span {
 }
 
 main.mobile-content .no-data {
-  background: white;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1098,7 +1097,7 @@ main.mobile-content .no-data .ic-info-list {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #e1eeea;
+  background-color: #d2dbf9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -1382,7 +1381,7 @@ main.mobile-content .btn-start {
 
 #menuModal .menu-body ul.menu-depth1 {
   width: 80px;
-  background: #027f5d;
+  background: #3c5abf;
   font-size: 14px;
   font-weight: 500;
 }
@@ -1407,7 +1406,7 @@ main.mobile-content .btn-start {
 
 #menuModal .menu-body ul.menu-depth1 li.current {
   font-weight: bold;
-  background: #028f69;
+  background: #5372d9;
 }
 
 #menuModal .menu-body .menu-depth2 {
@@ -1415,7 +1414,7 @@ main.mobile-content .btn-start {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #028f69;
+  background: #5372d9;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1448,13 +1447,13 @@ main.mobile-content .btn-start {
 
 #menuModal .menu-body .menu-depth2 details.active summary {
   border-radius: 4px;
-  background-color: #34a889;
+  background-color: #3c5abf;
 }
 
 #menuModal .menu-body .menu-depth2 details .details-submenu {
   margin-left: 10px;
   padding: 15px;
-  border-left: 1px solid #50ab91;
+  border-left: 1px solid #879ce4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1466,7 +1465,7 @@ main.mobile-content .btn-start {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.43;
-  color: #dcfff5;
+  color: #bbc8ef;
 }
 
 #menuModal .menu-body .menu-depth2 details .details-submenu li {
