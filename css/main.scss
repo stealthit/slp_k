@@ -226,7 +226,7 @@ $min-width : 1500px;
 
 body {
   background-color: #f2f3f4;  
-  overflow: overlay;
+  overflow: auto;
 }
 :root {
   -webkit-tap-highlight-color: transparent;
@@ -922,7 +922,8 @@ ul.list-tab {
 .list-tab-content {
   display: none;
   width: 100%;
-  &.active {display: flex;flex: 1;}
+  flex: 1;
+  &.active {display: flex;}
   .list-grid-wrapper {
     @include flex_center; flex: 1;
 
@@ -1029,7 +1030,7 @@ ul.list-tab {
 .img-logo {
   content: url(../assets/img_logo@3x.png);
   width: 36px;
-  height: 36px;  
+  height: 24px;  
 }
 .ic-left-help {
   content: url(../assets/ic_left_help@3x.png);
@@ -1062,10 +1063,15 @@ ul.list-tab {
   width: 16px;
   height: 16px;  
 }
+.img-sensor {
+  content: url(../assets/img_dashboard_sensor@3x.png);
+  width: 47px;
+  height: 50px;  
+}
 // style
 .wrapper {  
   min-width: 1500px;
-  min-height: 870px;
+  // min-height: 870px;
   height: 100%;
   display: flex;  
   position: relative;  
@@ -1108,7 +1114,8 @@ ul.list-tab {
       height: 54px;
       padding: 0 17px;      
       background-color: #5372d9;
-      font-size: 15px;      
+      font-size: 12px; 
+      font-weight: bold;     
       line-height: 1.13;      
       color: #fff;    
     }
@@ -1346,10 +1353,11 @@ ul.list-tab {
         flex: 1;
         padding: 10px;
         // background: #fff;
-        height: 100%;
+        height: calc(100vh - 96px);
                 
         .tab-contents {
-          height: 100%;
+          @include scrollbar('V');
+          height: calc(100vh - 96px);
           display: flex;
           flex-direction: column;
           gap: 10px;          
@@ -2286,6 +2294,134 @@ ul.list-tab {
     .setting-grid {
       flex: 1;
       grid-template-columns: 90px 1fr;
+    }
+  }
+}
+
+.dashboard {
+  .con-box {padding: 10px 0;}
+  .v-line {
+    width: 1px;
+    height: calc(100% - 20px);
+    background: #e2e5e9;
+  }
+  .h-line {}
+  .col-top {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;  
+    color: #444;
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+
+    .input-group {font-size: 12px;}
+  }
+  .col-content {
+    // height: 100%;
+    margin: 10px 0;
+    display: flex;
+
+    &.h-200 {
+      height: 200px;
+      .v-line {height: 100%;}
+    }
+  }
+  .box-title {
+    padding-left: 10px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;  
+    text-align: left;
+    color: #444;
+  }
+  .box-content {
+    padding: 0 10px;
+    @include flex_center();
+    .line4 {height: 140px;}
+    .line5 {height: 190px;}
+    .grid-wrapper {width: 100%;}
+    .list-grid-wrapper {
+      width: 100%;
+    }
+  }
+  .sensor-box {
+    @include flex_center();
+    gap: 25px;
+    flex-direction: column;
+    flex: 1;
+    height: 144px;
+    border-radius: 10px;
+    border: solid 1px #d7d7d7;
+    background-color: #fff;  
+
+    .sensor-count {
+      display: flex;
+      gap: 20px;
+      .cnt-box {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        .sensor-cl {
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          &.blue {background-color: #3598e4;}          
+          &.red {background-color: #dc3545;}
+        }
+        .cnt-txt {
+          font-size: 13px;
+          font-weight: bold;  
+          text-align: left;
+          color: #444;
+        }
+      }
+    }
+  }
+  ul.sign-list {    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    li {
+      &::before {
+        display: block;
+        content: "";
+        width: 3px;
+        height: 3px;  
+        margin: 9px 6px 8px 0;
+
+        background-color: #5372d9;
+      }
+      display: flex;
+      align-items: center;
+      height: 34px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+  .board-1col {
+    .map-box {padding-left: 10px;}
+  }
+  .board-2col {
+    display: flex;
+    gap: 10px;
+
+    .btn-box-group {
+      &.margin-b {padding-bottom: 10px;}
+      display: flex;
+      gap: 10px;
+      padding: 0 10px; 
+      button {
+        height: 26px;
+        padding: 4px 10px 3px;
+        border-radius: 13px;
+        border: solid 1px #ccc;
+        background-color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: #444;
+      }
     }
   }
 }
